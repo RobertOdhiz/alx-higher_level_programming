@@ -1,0 +1,4 @@
+#!/bin/bash
+PYFILE = "$1"
+echo "Compiling main.py ..."
+python3 -m py_compile "$PYFILE"
