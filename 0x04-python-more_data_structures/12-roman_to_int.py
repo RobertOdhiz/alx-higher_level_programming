@@ -9,9 +9,9 @@ def roman_to_int(roman_string):
         value = roman_dict[char]
         if value < prev:
             result -= value
-        elif value > prev:
+        else:
             result += value
 
-        value = prev
+        prev = value
 
     return result
