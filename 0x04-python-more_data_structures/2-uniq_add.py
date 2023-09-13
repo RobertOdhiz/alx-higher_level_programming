@@ -5,7 +5,7 @@ def uniq_add(my_list=[]):
     list_len = len(my_list)
     for num in my_list:
         if num not in unique:
-                add += num
-                unique.add(num)
+            add += num
+            unique.add(num)
 
     return add
