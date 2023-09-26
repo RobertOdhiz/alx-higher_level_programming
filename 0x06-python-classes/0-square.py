@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-class square:
-    def __init__(self, height=0, width=0):
-        self.height = height
-        self.width = width
+class Square:
+    def __init__(self):
+        pass
