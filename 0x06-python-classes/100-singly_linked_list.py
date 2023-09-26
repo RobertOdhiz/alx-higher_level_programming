@@ -77,4 +77,3 @@ class SinglyLinkedList:
             values.append(str(tmp.data))
             tmp = tmp.nxt
         return ('\n'.join(values))
-
