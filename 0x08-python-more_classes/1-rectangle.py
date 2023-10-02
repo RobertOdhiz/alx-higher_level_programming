@@ -7,7 +7,7 @@ class Rectangle:
     Beginning of class definition
     """
     def __init__(self, width=0, height=0):
-        """Initiaalizing Rectangle vars"""
+        """Initializing Rectangle vars"""
         self.width = width
         self.height = height
 
@@ -30,7 +30,7 @@ class Rectangle:
         """Getter for private instance att height"""
         return self.__height
 
-    @height_setter
+    @height.setter
     def height(self, value):
         """Setter for private att height"""
         @property
@@ -38,9 +38,9 @@ class Rectangle:
         """Getter for private instance attribute width"""
         return self.__width
 
-    @width_setter
+    @width.setter
     def width(self, value):
-        """Setter for private instance attribute width"""
+        """Setter for private instance attribute height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
