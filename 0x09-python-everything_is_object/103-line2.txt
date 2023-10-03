@@ -1,1 +1,1 @@
-No new int objects are created
+0
