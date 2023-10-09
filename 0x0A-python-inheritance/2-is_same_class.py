@@ -9,4 +9,4 @@ def is_same_class(obj, a_class):
     Function definition
     Args: obj - object checked, a_class - class instance
     """
-    return (type(obj) == a_class)
+    return (type(obj) is a_class)
