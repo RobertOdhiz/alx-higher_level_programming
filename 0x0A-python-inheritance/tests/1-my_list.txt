@@ -1,0 +1,17 @@
+# test_cases.txt
+
+# Test Case 1: Sorted list
+>>> MyList([1, 2, 3, 4, 5]).print_sorted()
+[1, 2, 3, 4, 5]
+
+# Test Case 2: Reverse-sorted list
+>>> MyList([5, 4, 3, 2, 1]).print_sorted()
+[1, 2, 3, 4, 5]
+
+# Test Case 3: Unsorted list
+>>> MyList([3, 1, 4, 2, 5]).print_sorted()
+[1, 2, 3, 4, 5]
+
+# Test Case 4: Failed case
+>>> MyList([9, 7, 5, 3, 1]).print_sorted()
+[1, 2, 3, 4, 5]  # This is expected to fail
