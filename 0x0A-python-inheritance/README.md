@@ -1,0 +1,3 @@
+## Concepts
+- Python OOP
+	- Inheritance
