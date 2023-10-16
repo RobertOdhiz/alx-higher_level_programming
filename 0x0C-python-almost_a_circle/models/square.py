@@ -10,6 +10,7 @@ class Square(Rectangle):
     def __init__(self, size, x=0, y=0, id=None):
         """ Class Constructor """
         super().__init__(size, size, x, y, id)
+
     @property
     def size(self):
         """ Public getter for size attribute """
@@ -41,3 +42,12 @@ class Square(Rectangle):
         string = "[Square] ({}) {}/{} - {}".format(
                         self.id, self.x, self.y, self.width)
         return string
+
+    def to_dictionary(self):
+        """ Returns Dictionary representation of Square """
+        return {
+                'id': self.id,
+                'x': self.x,
+                'size': self.width,
+                'y': self.y
+        }
