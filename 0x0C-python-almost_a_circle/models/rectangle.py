@@ -102,6 +102,7 @@ class Rectangle(Base):
         return string
 
     def to_dictionary(self):
+        """ Returns Dictionary representation of the rectangle """
         return {
             'y': self.y,
             'x': self.x,
