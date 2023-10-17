@@ -8,6 +8,7 @@ import json
 class Base:
     """ Representation of the base class """
     __nb_objects = 0
+
     def __init__(self, id=None):
         """ Initializing the class attributes """
         if id is not None:
@@ -64,7 +65,10 @@ class Base:
             with open(filename, 'r') as f:
                 data = f.read()
                 decoded_data = cls.from_json_string(data)
-                instances = [cls.create(**instance_data) for instance_data in decoded_data]
+                instances = []
+                for instance_data in decoded_data:
+                    instance = cls.create(**instance_data)
+                    instances.append(instance)
                 return instances
         except FileNotFoundError:
             return []
