@@ -20,7 +20,7 @@ if __name__ == '__main__':
     session = Session()
 
     cities = session.query(State, City)\
-                    .filter(State.id == City.state.id)
+                    .filter(State.id == City.state.id).all()
 
     for item in cities:
         print("{}: ({}) {}".format(item.State.name,

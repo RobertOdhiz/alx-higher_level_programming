@@ -11,7 +11,7 @@ class City(Base):
     """
     State class that inherits from Base
     attributes:
-        id - integer 
+        id - integer
         name - string
         state_id - integer
     links to the MySQL table cities
